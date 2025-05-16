@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locais - Russian Fishing 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Russian Fishing 4 Logo">
+                <h1>Russian Fishing 4 - Guia Completo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Espécies</a>
+                        <div class="dropdown-content">
+                            <a href="especies.html">Todas as Espécies</a>
+                            <a href="especies.html?filter=trophy">Peixes Troféu</a>
+                            <a href="especies.html?filter=common">Peixes Comuns</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Locais</a>
+                        <div class="dropdown-content">
+                            <a href="locais.html">Todos os Locais</a>
+                            <a href="locais.html?filter=lakes">Lagos</a>
+                            <a href="locais.html?filter=rivers">Rios</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Equipamentos</a>
+                        <div class="dropdown-content">
+                            <a href="equipamentos.html?type=rods">Varas</a>
+                            <a href="equipamentos.html?type=reels">Molinetes</a>
+                            <a href="equipamentos.html?type=lines">Linhas</a>
+                            <a href="equipamentos.html?type=hooks">Anzóis</a>
+                            <a href="equipamentos.html?type=baits">Iscas</a>
+                        </div>
+                    </li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="teorias.html">Teorias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Locais de Pesca</h2>
+                <p>Explore todos os locais de pesca disponíveis no Russian Fishing 4, com informações detalhadas sobre características, espécies encontradas e melhores pontos.</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="search-location" placeholder="Buscar local...">
+                </div>
+                <div class="filter-box">
+                    <label for="type-filter">Filtrar por tipo:</label>
+                    <select id="type-filter">
+                        <option value="all">Todos os tipos</option>
+                        <option value="lake">Lagos</option>
+                        <option value="river">Rios</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="cards-container">
+                <!-- Lagos -->
+                <div class="location-card" data-type="lake">
+                    <div class="card-image">
+                        <img src="images/mosquito-lake.jpg" alt="Mosquito Lake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Mosquito Lake</h3>
+                        <p>Lago pequeno e raso, ideal para iniciantes, com diversas espécies comuns.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Fácil</span>
+                            <span>Espécies: 10</span>
+                        </div>
+                        <a href="location-details.html?id=mosquito-lake" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="lake">
+                    <div class="card-image">
+                        <img src="images/old-burg-lake.jpg" alt="Old Burg Lake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Old Burg Lake</h3>
+                        <p>Lago médio com águas relativamente profundas e estruturas submersas.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Média</span>
+                            <span>Espécies: 9</span>
+                        </div>
+                        <a href="location-details.html?id=old-burg-lake" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="lake">
+                    <div class="card-image">
+                        <img src="images/kuori-lake.jpg" alt="Kuori Lake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kuori Lake</h3>
+                        <p>Lago grande com águas profundas e espécies específicas de água fria.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Média-Alta</span>
+                            <span>Espécies: 11</span>
+                        </div>
+                        <a href="location-details.html?id=kuori-lake" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="lake">
+                    <div class="card-image">
+                        <img src="images/bear-lake.jpg" alt="Bear Lake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bear Lake</h3>
+                        <p>Lago remoto com águas cristalinas e espécies raras de salmonídeos.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Alta</span>
+                            <span>Espécies: 11</span>
+                        </div>
+                        <a href="location-details.html?id=bear-lake" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="lake">
+                    <div class="card-image">
+                        <img src="images/copper-lake.jpg" alt="Copper Lake">
+                    </div>
+                    <div class="card-content">
+                        <h3>Copper Lake</h3>
+                        <p>Lago grande com águas profundas, conhecido por seus Wild Carp e Eastern Bream.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Alta</span>
+                            <span>Espécies: 4</span>
+                        </div>
+                        <a href="location-details.html?id=copper-lake" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Rios -->
+                <div class="location-card" data-type="river">
+                    <div class="card-image">
+                        <img src="images/winding-rivulet.jpg" alt="Winding Rivulet">
+                    </div>
+                    <div class="card-content">
+                        <h3>Winding Rivulet</h3>
+                        <p>Rio sinuoso com correnteza moderada, ideal para pescadores iniciantes e intermediários.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Média</span>
+                            <span>Espécies: 8</span>
+                        </div>
+                        <a href="location-details.html?id=winding-rivulet" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="river">
+                    <div class="card-image">
+                        <img src="images/belaya-river.jpg" alt="Belaya River">
+                    </div>
+                    <div class="card-content">
+                        <h3>Belaya River</h3>
+                        <p>Rio largo com correnteza variável e combinação de águas rasas e canais profundos.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Média-Alta</span>
+                            <span>Espécies: 10</span>
+                        </div>
+                        <a href="location-details.html?id=belaya-river" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="river">
+                    <div class="card-image">
+                        <img src="images/volkhov-river.jpg" alt="Volkhov River">
+                    </div>
+                    <div class="card-content">
+                        <h3>Volkhov River</h3>
+                        <p>Rio profundo com forte correnteza, lar de espécies raras como Beluga Sturgeon.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Alta</span>
+                            <span>Espécies: 12</span>
+                        </div>
+                        <a href="location-details.html?id=volkhov-river" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="river">
+                    <div class="card-image">
+                        <img src="images/lower-tunguska.jpg" alt="Lower Tunguska River">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lower Tunguska River</h3>
+                        <p>Rio remoto da Sibéria com espécies únicas como Taimen e Arctic Grayling.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Muito Alta</span>
+                            <span>Espécies: 4</span>
+                        </div>
+                        <a href="location-details.html?id=lower-tunguska" class="btn">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="location-card" data-type="river">
+                    <div class="card-image">
+                        <img src="images/akhtuba-river.jpg" alt="Akhtuba River">
+                    </div>
+                    <div class="card-content">
+                        <h3>Akhtuba River</h3>
+                        <p>Rio largo com múltiplos canais e lagos conectados, conhecido por peixes troféu.</p>
+                        <div class="location-stats">
+                            <span>Dificuldade: Muito Alta</span>
+                            <span>Espécies: 7</span>
+                        </div>
+                        <a href="location-details.html?id=akhtuba-river" class="btn">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="especies.html">Espécies</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="equipamentos.html">Equipamentos</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="teorias.html">Teorias</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Espécies Populares</h3>
+                <ul>
+                    <li><a href="fish-details.html?id=beluga-sturgeon">Beluga Sturgeon</a></li>
+                    <li><a href="fish-details.html?id=wild-carp">Wild Carp</a></li>
+                    <li><a href="fish-details.html?id=taimen">Taimen</a></li>
+                    <li><a href="fish-details.html?id=catfish">Catfish</a></li>
+                    <li><a href="fish-details.html?id=pike">Pike</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Locais Destacados</h3>
+                <ul>
+                    <li><a href="location-details.html?id=copper-lake">Copper Lake</a></li>
+                    <li><a href="location-details.html?id=akhtuba-river">Akhtuba River</a></li>
+                    <li><a href="location-details.html?id=lower-tunguska">Lower Tunguska River</a></li>
+                    <li><a href="location-details.html?id=volkhov-river">Volkhov River</a></li>
+                    <li><a href="location-details.html?id=mosquito-lake">Mosquito Lake</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Russian Fishing 4 - Guia Completo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

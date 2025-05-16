@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espécies - Russian Fishing 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="images/logo.png" alt="Russian Fishing 4 Logo">
+                <h1>Russian Fishing 4 - Guia Completo</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Espécies</a>
+                        <div class="dropdown-content">
+                            <a href="especies.html">Todas as Espécies</a>
+                            <a href="especies.html?filter=trophy">Peixes Troféu</a>
+                            <a href="especies.html?filter=common">Peixes Comuns</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Locais</a>
+                        <div class="dropdown-content">
+                            <a href="locais.html">Todos os Locais</a>
+                            <a href="locais.html?filter=lakes">Lagos</a>
+                            <a href="locais.html?filter=rivers">Rios</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)">Equipamentos</a>
+                        <div class="dropdown-content">
+                            <a href="equipamentos.html?type=rods">Varas</a>
+                            <a href="equipamentos.html?type=reels">Molinetes</a>
+                            <a href="equipamentos.html?type=lines">Linhas</a>
+                            <a href="equipamentos.html?type=hooks">Anzóis</a>
+                            <a href="equipamentos.html?type=baits">Iscas</a>
+                        </div>
+                    </li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="teorias.html">Teorias</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Espécies de Peixes</h2>
+                <p>Explore todas as espécies de peixes disponíveis no Russian Fishing 4, com informações detalhadas sobre como, onde e quando pescá-las.</p>
+            </div>
+            
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="search-fish" placeholder="Buscar espécie...">
+                </div>
+                <div class="filter-box">
+                    <label for="location-filter">Filtrar por local:</label>
+                    <select id="location-filter">
+                        <option value="all">Todos os locais</option>
+                        <option value="mosquito-lake">Mosquito Lake</option>
+                        <option value="winding-rivulet">Winding Rivulet</option>
+                        <option value="old-burg-lake">Old Burg Lake</option>
+                        <option value="belaya-river">Belaya River</option>
+                        <option value="kuori-lake">Kuori Lake</option>
+                        <option value="bear-lake">Bear Lake</option>
+                        <option value="volkhov-river">Volkhov River</option>
+                        <option value="copper-lake">Copper Lake</option>
+                        <option value="lower-tunguska">Lower Tunguska River</option>
+                        <option value="akhtuba-river">Akhtuba River</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="cards-container">
+                <!-- Peixes de Água Doce Comuns -->
+                <div class="fish-card" data-locations="mosquito-lake,winding-rivulet,old-burg-lake,belaya-river,kuori-lake,bear-lake,volkhov-river">
+                    <div class="card-image">
+                        <img src="images/common-roach.jpg" alt="Common Roach">
+                    </div>
+                    <div class="card-content">
+                        <h3>Common Roach</h3>
+                        <p>Peixe comum encontrado em quase todos os corpos d'água do jogo.</p>
+                        <a href="fish-details.html?id=common-roach" class="fish-link btn" data-fish-id="common-roach">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="mosquito-lake,winding-rivulet,old-burg-lake,belaya-river,kuori-lake,bear-lake">
+                    <div class="card-image">
+                        <img src="images/rudd.jpg" alt="Rudd">
+                    </div>
+                    <div class="card-content">
+                        <h3>Rudd</h3>
+                        <p>Espécie comum encontrada em águas rasas com vegetação.</p>
+                        <a href="fish-details.html?id=rudd" class="fish-link btn" data-fish-id="rudd">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="mosquito-lake,old-burg-lake,kuori-lake,bear-lake">
+                    <div class="card-image">
+                        <img src="images/tench.jpg" alt="Tench">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tench</h3>
+                        <p>Peixe de fundo que prefere águas calmas com vegetação densa.</p>
+                        <a href="fish-details.html?id=tench" class="fish-link btn" data-fish-id="tench">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Carpas -->
+                <div class="fish-card" data-locations="mosquito-lake,copper-lake,akhtuba-river">
+                    <div class="card-image">
+                        <img src="images/grass-carp.jpg" alt="Grass Carp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Grass Carp</h3>
+                        <p>Espécie herbívora que pode atingir grandes tamanhos.</p>
+                        <a href="fish-details.html?id=grass-carp" class="fish-link btn" data-fish-id="grass-carp">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="mosquito-lake,old-burg-lake,kuori-lake,bear-lake">
+                    <div class="card-image">
+                        <img src="images/common-carp.jpg" alt="Common Carp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Common Carp</h3>
+                        <p>Uma das espécies mais populares para pescadores de troféus.</p>
+                        <a href="fish-details.html?id=common-carp" class="fish-link btn" data-fish-id="common-carp">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="copper-lake,akhtuba-river">
+                    <div class="card-image">
+                        <img src="images/wild-carp.jpg" alt="Wild Carp">
+                    </div>
+                    <div class="card-content">
+                        <h3>Wild Carp</h3>
+                        <p>Espécie desafiadora encontrada em locais específicos.</p>
+                        <a href="fish-details.html?id=wild-carp" class="fish-link btn" data-fish-id="wild-carp">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Predadores -->
+                <div class="fish-card" data-locations="mosquito-lake,winding-rivulet,old-burg-lake,belaya-river,kuori-lake,bear-lake,volkhov-river">
+                    <div class="card-image">
+                        <img src="images/pike.jpg" alt="Pike">
+                    </div>
+                    <div class="card-content">
+                        <h3>Pike</h3>
+                        <p>Predador agressivo encontrado em diversos corpos d'água.</p>
+                        <a href="fish-details.html?id=pike" class="fish-link btn" data-fish-id="pike">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="winding-rivulet,old-burg-lake,belaya-river,kuori-lake,bear-lake,volkhov-river">
+                    <div class="card-image">
+                        <img src="images/zander.jpg" alt="Zander">
+                    </div>
+                    <div class="card-content">
+                        <h3>Zander</h3>
+                        <p>Predador noturno que prefere águas mais profundas.</p>
+                        <a href="fish-details.html?id=zander" class="fish-link btn" data-fish-id="zander">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="belaya-river,volkhov-river,akhtuba-river">
+                    <div class="card-image">
+                        <img src="images/catfish.jpg" alt="Catfish">
+                    </div>
+                    <div class="card-content">
+                        <h3>Catfish</h3>
+                        <p>Um dos maiores predadores de água doce do jogo.</p>
+                        <a href="fish-details.html?id=catfish" class="fish-link btn" data-fish-id="catfish">Detalhes</a>
+                    </div>
+                </div>
+                
+                <!-- Espécies Raras -->
+                <div class="fish-card" data-locations="volkhov-river,akhtuba-river">
+                    <div class="card-image">
+                        <img src="images/beluga-sturgeon.jpg" alt="Beluga Sturgeon">
+                    </div>
+                    <div class="card-content">
+                        <h3>Beluga Sturgeon</h3>
+                        <p>Um dos maiores peixes de água doce do mundo.</p>
+                        <a href="fish-details.html?id=beluga-sturgeon" class="fish-link btn" data-fish-id="beluga-sturgeon">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="lower-tunguska">
+                    <div class="card-image">
+                        <img src="images/taimen.jpg" alt="Taimen">
+                    </div>
+                    <div class="card-content">
+                        <h3>Taimen</h3>
+                        <p>O maior membro da família dos salmonídeos.</p>
+                        <a href="fish-details.html?id=taimen" class="fish-link btn" data-fish-id="taimen">Detalhes</a>
+                    </div>
+                </div>
+                
+                <div class="fish-card" data-locations="lower-tunguska">
+                    <div class="card-image">
+                        <img src="images/arctic-grayling.jpg" alt="Arctic Grayling">
+                    </div>
+                    <div class="card-content">
+                        <h3>Arctic Grayling</h3>
+                        <p>Espécie de água fria com nadadeira dorsal distintiva.</p>
+                        <a href="fish-details.html?id=arctic-grayling" class="fish-link btn" data-fish-id="arctic-grayling">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-column">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="especies.html">Espécies</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="equipamentos.html">Equipamentos</a></li>
+                    <li><a href="tecnicas.html">Técnicas</a></li>
+                    <li><a href="teorias.html">Teorias</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Espécies Populares</h3>
+                <ul>
+                    <li><a href="fish-details.html?id=beluga-sturgeon">Beluga Sturgeon</a></li>
+                    <li><a href="fish-details.html?id=wild-carp">Wild Carp</a></li>
+                    <li><a href="fish-details.html?id=taimen">Taimen</a></li>
+                    <li><a href="fish-details.html?id=catfish">Catfish</a></li>
+                    <li><a href="fish-details.html?id=pike">Pike</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Locais Destacados</h3>
+                <ul>
+                    <li><a href="location-details.html?id=copper-lake">Copper Lake</a></li>
+                    <li><a href="location-details.html?id=akhtuba-river">Akhtuba River</a></li>
+                    <li><a href="location-details.html?id=lower-tunguska">Lower Tunguska River</a></li>
+                    <li><a href="location-details.html?id=volkhov-river">Volkhov River</a></li>
+                    <li><a href="location-details.html?id=mosquito-lake">Mosquito Lake</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Russian Fishing 4 - Guia Completo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
